@@ -1,4 +1,4 @@
-module server
+module src
 
 go 1.22.2
 
@@ -6,7 +6,7 @@ require (
 	cloud.google.com/go/firestore v1.15.0
 	firebase.google.com/go/v4 v4.14.0
 	github.com/labstack/echo/v4 v4.12.0
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.9.0
 	google.golang.org/api v0.172.0
 )
 

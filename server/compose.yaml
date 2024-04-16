@@ -1,0 +1,7 @@
+services: 
+    go:
+        container_name: kindercastle_container
+        image: kindercastle_image:1.0.0
+        ports: 
+            - 1323:1323
+        
