@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "b7e77199-fa7f-4e52-8703-5185779ce80a",
+		"name": "Kindercastle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4459576"
+	},
+	"item": [
+		{
+			"name": "Create Data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "JuigAd0Hv1gMDChpIeN0C4N3j7J3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Berjaya\",\n    \"page_total\":203,\n    \"written_by\":\"Joko Widodo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "203.194.114.33:1323/book",
+					"host": [
+						"203",
+						"194",
+						"114",
+						"33"
+					],
+					"port": "1323",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Data",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Berjaya\",\n    \"page_total\":203,\n    \"written_by\":\"Joko Widodo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1323/book",
+							"host": [
+								"localhost"
+							],
+							"port": "1323",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Apr 2024 03:39:44 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "64"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"title\": \"Berjaya\",\n    \"page_total\": 203,\n    \"written_by\": \"Joko Widodo\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Read Data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "JuigAd0Hv1gMDChpIeN0C4N3j7J3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "203.194.114.33:1323/books",
+					"host": [
+						"203",
+						"194",
+						"114",
+						"33"
+					],
+					"port": "1323",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Read Data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1323/books",
+							"host": [
+								"localhost"
+							],
+							"port": "1323",
+							"path": [
+								"books"
+							]
+						}
+					},
+					"status": "Found",
+					"code": 302,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Apr 2024 03:40:28 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "394"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"doc_id\": \"GTFv90wct18wH3IhCVyE\",\n        \"title\": \"Tidak Jaya Lagi\",\n        \"page_total\": 203,\n        \"written_by\": \"Joko Widodo\"\n    },\n    {\n        \"doc_id\": \"ZEUQa3YGRU7uF376eHz9\",\n        \"title\": \"Berjaya\",\n        \"page_total\": 203,\n        \"written_by\": \"Joko Widodo\"\n    },\n    {\n        \"doc_id\": \"ZHyT8F8nRafP9kRQuo4g\",\n        \"title\": \"Berjaya\",\n        \"page_total\": 203,\n        \"written_by\": \"Joko Widodo\"\n    },\n    {\n        \"doc_id\": \"dlH8sCAzmqfEbEISpl6G\",\n        \"title\": \"Berjaya\",\n        \"page_total\": 203,\n        \"written_by\": \"Joko Widodo\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update Data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "JuigAd0Hv1gMDChpIeN0C4N3j7J3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Tidak Jaya Lagi\",\n    \"page_total\":203,\n    \"written_by\":\"Joko Widodo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "203.194.114.33:1323/book/BHMVsEAmuqD5uyr0MIP2",
+					"host": [
+						"203",
+						"194",
+						"114",
+						"33"
+					],
+					"port": "1323",
+					"path": [
+						"book",
+						"BHMVsEAmuqD5uyr0MIP2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Data",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Tidak Jaya Lagi\",\n    \"page_total\":203,\n    \"written_by\":\"Joko Widodo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "203.194.114.33:1323/book/BHMVsEAmuqD5uyr0MIP2",
+							"host": [
+								"203",
+								"194",
+								"114",
+								"33"
+							],
+							"port": "1323",
+							"path": [
+								"book",
+								"BHMVsEAmuqD5uyr0MIP2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Apr 2024 21:58:58 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"title\": \"Tidak Jaya Lagi\",\n    \"page_total\": 203,\n    \"written_by\": \"Joko Widodo\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "JuigAd0Hv1gMDChpIeN0C4N3j7J3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "203.194.114.33:1323/book/ZEUQa3YGRU7uF376eHz9",
+					"host": [
+						"203",
+						"194",
+						"114",
+						"33"
+					],
+					"port": "1323",
+					"path": [
+						"book",
+						"ZEUQa3YGRU7uF376eHz9"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Data",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "203.194.114.33:1323/book/ZEUQa3YGRU7uF376eHz9",
+							"host": [
+								"203",
+								"194",
+								"114",
+								"33"
+							],
+							"port": "1323",
+							"path": [
+								"book",
+								"ZEUQa3YGRU7uF376eHz9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 20 Apr 2024 21:58:15 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						}
+					],
+					"cookie": [],
+					"body": "Book Deleted"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "Production",
+			"value": "203.194.114.33"
+		}
+	]
+}
