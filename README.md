@@ -15,30 +15,30 @@ Ensure your PC has installed Docker, Go & Git
 Open your terminal for Linux Based
 
 #### Step 3
-type `git clone https://github.com/fikriprayoga1/kindercastle-fullstack-test.git` and than enter
+type `git clone https://github.com/fikriprayoga1/kindercastle-fullstack-test.git` and then press enter
 
 #### Step 4
-type `cd kindercastle-fullstack-test` and than enter
+type `cd kindercastle-fullstack-test` and then press enter
 
 #### Step 5
-type `docker build -t kindercastle_image:1.0.0 .` and than enter
+type `docker build -t kindercastle_image:1.0.0 .` and then press enter
 
 #### Step 6
-type `docker compose up -d`
+type `docker compose up -d` and then press enter
 
 ### Testing
 #### Step 1
-Go to root of server.go file by type `cd src` and than enter
+Go to root of server.go file by type `cd src` and then press enter
 
 #### Step 2
-type `go test .` and than enter
+type `go test .` and then press enter
 
 ### API
 You can use postman collection in this folder to see all about api
 
 ### Warning
 #### Server not running
-Ensure server running. You can type `docker logs kindercastle_container` and than enter to check your server
+Ensure server running. You can type `docker logs kindercastle_container` and then press enter to check your server status
 
 ## Server Tester
 You can test the server using postman collection. Import postman collection v2.1 in this folder
