@@ -31,7 +31,7 @@ type `docker compose up -d`
 Go to root of server.go file by type `cd src` and than enter
 
 #### Step 2
-type `go test -v` and than enter
+type `go test .` and than enter
 
 ## Warning
 #### Server not running
