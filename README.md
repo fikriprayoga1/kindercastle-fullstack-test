@@ -9,7 +9,7 @@ This program run on Infrastructur as Service(IaaS) and using docker
 
 ### Quick Start
 #### Step 1
-Ensure your PC has installed Docker & Git
+Ensure your PC has installed Docker, Go & Git
 
 #### Step 2
 Open your terminal for Linux Based
@@ -25,6 +25,13 @@ type `docker build -t kindercastle_image:1.0.0 .` and than enter
 
 #### Step 6
 type `docker compose up -d`
+
+### Testing
+#### Step 1
+Go to root of server.go file by type `cd src` and than enter
+
+#### Step 2
+type `go test -v` and than enter
 
 ## Warning
 #### Server not running
