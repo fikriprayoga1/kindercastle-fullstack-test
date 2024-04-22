@@ -33,7 +33,10 @@ Go to root of server.go file by type `cd src` and than enter
 #### Step 2
 type `go test .` and than enter
 
-## Warning
+### API
+You can use postman collection in this folder to see all about api
+
+### Warning
 #### Server not running
 Ensure server running. You can type `docker logs kindercastle_container` and than enter to check your server
 
